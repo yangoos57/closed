@@ -31,7 +31,7 @@
   <style id="darkTheme">
     .intro-and-nav,
     .main-and-footer {
-      filter: invert(100%);
+      filter: invert(10%);
     }
 
     * {
@@ -42,7 +42,7 @@
     .colors,
     iframe,
     .demo-container {
-      filter: invert(100%);
+      filter: invert(1%);
     }
   </style>
 
@@ -57,14 +57,49 @@
   
     <link rel="stylesheet" href="/css/custom_02.css">
   
-
-  
-  
-  <title> | Hello world!</title>
 </head>
+  <style>
+  #test{
+    height: 30px;
+  } 
+  #test ul li {
+    list-style: none;
+    float : left;
+    line-height: 30px;
+    vertical-align: middle;  
+  }
+  .test2{
+    font-family: sans-serif;
+    width : 500px
+  }
+</style>
+
+<div id ='test'>
+  <ul>
+  <li class = 'test2'>
+     ''
+  </li>
+  <li>
+    <h3 class ='test2'>Hello center</h3>
+  </li>
+  <li>
+    <input
+    id="search"
+    type="text"
+    placeholder="Search by title..."
+    aria-label="Search by title"
+    size="10"
+    />
+  </li>
+</ul>
+
+
+ 
+</div>
+
 
   <body>
-    <a href="#main">skip to content</a>
+    
     <noscript>
   <style>
     body {
@@ -165,134 +200,107 @@
 
     <div class="wrapper">
       <header class="intro-and-nav" role="banner">
-  <div>
-    <div class="intro">
-      <a
-        class="logo"
-        href="https://yangoos57.github.io"
-        aria-label="Hello world! home page"
-      >
-        
-          <img 
-            src="/images/logo.svg" 
-            alt="An alternative text description of the logo"
-          >
-        
-      </a>
-      <p class="library-desc">
-         description 
-      </p>
-    </div>
     <nav id="patterns-nav" class="patterns" role="navigation">
-  <h2 class="vh">Main navigation</h2>
-  <button id="menu-button" aria-expanded="false">
-    <svg viewBox="0 0 50 50" aria-hidden="true" focusable="false">
-      <use xlink:href="#menu"></use>
-    </svg>
-    Menu
-  </button>
-  
-  <ul id="patterns-list">
-  
-    <li class="pattern">
+  <div style="border:1px solid; padding:10px;">
+  <h3><a href="/">전체보기Pages(8) </a></h3>
+
+    <ul>
+       
       
+        <li>
+         <h3>Data_analytics</h3> 
+          <hr>
+      </li>
+      <ul>
+        
+        
+        <li>
+          <div>
+            <a href="/data_analytics/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D-%EC%9D%B4%EB%A1%A0" style="text-decoration: none">데이터-분석-이론Pages(1) </a>
+          </div>
+        </a>
+      </li>
+        
+        
+        <li>
+          <div>
+            <a href="/data_analytics/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC" style="text-decoration: none">데이터-전처리Pages(1) </a>
+          </div>
+        </a>
+      </li>
+        
+        
+        <li>
+          <div>
+            <a href="/data_analytics/%EB%B6%84%EC%84%9D-%EC%8B%A4%EB%AC%B4" style="text-decoration: none">분석-실무Pages(1) </a>
+          </div>
+        </a>
+      </li>
+        
+        <br>
+      </ul>
+       
       
+        <li>
+         <h3>Personal</h3> 
+          <hr>
+      </li>
+      <ul>
+        
+        
+        <li>
+          <div>
+            <a href="/personal/%EB%81%84%EC%A0%81%EB%81%84%EC%A0%81" style="text-decoration: none">끄적끄적Pages(1) </a>
+          </div>
+        </a>
+      </li>
+        
+        <br>
+      </ul>
+       
       
+        <li>
+         <h3>python</h3> 
+          <hr>
+      </li>
+      <ul>
+        
+        
+        <li>
+          <div>
+            <a href="/python/pandas" style="text-decoration: none">pandasPages(2) </a>
+          </div>
+        </a>
+      </li>
+        
+        
+        <li>
+          <div>
+            <a href="/python/seaborn_tag" style="text-decoration: none">seaborn_tagPages(1) </a>
+          </div>
+        </a>
+      </li>
+        
+        
+        <li>
+          <div>
+            <a href="/python/%EA%B8%B0%EB%B3%B8%ED%95%A8%EC%88%98" style="text-decoration: none">기본함수Pages(1) </a>
+          </div>
+        </a>
+      </li>
+        
+        <br>
+      </ul>
       
-      <a href="/" >
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">Home</span>
-      </a>
-    </li>
-  
-    <li class="pattern">
-      
-      
-      
-      
-      <a href="/posts/" >
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">Blog</span>
-      </a>
-    </li>
-  
-    <li class="pattern">
-      
-      
-      
-      
-      <a href="/tags/" >
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">Tags</span>
-      </a>
-    </li>
-  
-    <li class="pattern">
-      
-      
-      
-      
-      <a href="/about/" >
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">About</span>
-      </a>
-    </li>
-  
-    <li class="pattern">
-      
-      
-      
-      
-      <a href="/index.xml" >
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">RSS</span>
-      </a>
-    </li>
-  
-    <li class="pattern">
-      
-      
-      
-      
-      <a href="/categories/" >
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">category</span>
-      </a>
-    </li>
-  
-    <li class="pattern">
-      
-      
-      
-      
-      <a href="/posts/python/" >
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">python</span>
-      </a>
-    </li>
-  
-  </ul>
-</nav>
+    </ul>
+  </div>  
+<nav>
     
   </div>
 </header>
 
       <div class="main-and-footer">
-        <div>
+        <div class >
           
 <main id="main">
   <h1></h1>
@@ -317,9 +325,47 @@
           >
             <use xlink:href="#bookmark"></use>
           </svg>
-          Seaborn test
+          Seaborn_title
           <div>
           <h4>Markdown 단축키 M 함수 단축키 A Goal  the course is aimed at those with no prior programming experience. each chart uses short and simple code, making seaborn much faster and easier to use than many other data visualization tools (such as Excel, for instance).  import pandas as pd pd.plotting.register_matplotlib_converters() ## 뭐지? import matplotlib.pyplot as plt ## %가 뭐지 %matplotlib inline import seaborn as sns filepath = &#39;D:/git_local_repository/yangoos57/kaggle/courses/Data Visualization/Data_set/&#39; fifa_data = pd.</h4>
+          </div>
+        </a>
+      </h2>
+    </li>
+    
+    <li>
+      <h2>
+        <a href="/posts/python/%EA%B8%B0%EB%B3%B8%ED%95%A8%EC%88%98/">
+          <svg
+            class="bookmark"
+            aria-hidden="true"
+            viewBox="0 0 40 50"
+            focusable="false"
+          >
+            <use xlink:href="#bookmark"></use>
+          </svg>
+          기본함수_Title
+          <div>
+          <h4>Hello world!! </h4>
+          </div>
+        </a>
+      </h2>
+    </li>
+    
+    <li>
+      <h2>
+        <a href="/posts/python/pandas/">
+          <svg
+            class="bookmark"
+            aria-hidden="true"
+            viewBox="0 0 40 50"
+            focusable="false"
+          >
+            <use xlink:href="#bookmark"></use>
+          </svg>
+          Pandas_title
+          <div>
+          <h4>Hello world!! </h4>
           </div>
         </a>
       </h2>
@@ -328,23 +374,13 @@
   </ul>
 </main>
 
-          
-            <footer role="contentinfo">
-  <div
-  
-  >
-    <label for="themer">
-      dark theme: <input type="checkbox" id="themer" class="vh">
-      
-      <span aria-hidden="true"></span>
-    </label>
+          <footer role="contentinfo">
+  <div> 
+     <input id="themer" class="vh">
   </div>
-  
-    footer
-  
+  내용을 추가합시다.
 </footer>
 
-          
         </div>
       </div>
     </div>
@@ -358,7 +394,7 @@
 
 <script src="/js/search.da4e0819db35e5fc5289562d46cf4a2173684e337d69d997639a24b79ecd6416.js"></script>
 
-<link rel="stylesheet" href="/css/search.683438f4b58e49cfb4e56445583591806e344b52f466223fb13a2b07b75fe39b.css"></link>
+<link rel="stylesheet" href="/css/search.a0b9bf5cc437517718361bb021c2755cb3d18aa75bd41e222a3591fc670b605a.css"></link>
 
 
 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pandas on Hello world!</title>
+    <link>https://yangoos57.github.io/python/pandas/</link>
+    <description>Recent content in pandas on Hello world!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Jan 2022 15:32:54 +0900</lastBuildDate><atom:link href="https://yangoos57.github.io/python/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://yangoos57.github.io/posts/my-first-post/</link>
+      <pubDate>Wed, 26 Jan 2022 15:32:54 +0900</pubDate>
+      
+      <guid>https://yangoos57.github.io/posts/my-first-post/</guid>
+      <description>Hello world!! </description>
+    </item>
+    
+    <item>
+      <title>Pandas_title</title>
+      <link>https://yangoos57.github.io/posts/python/pandas/</link>
+      <pubDate>Wed, 26 Jan 2022 15:32:54 +0900</pubDate>
+      
+      <guid>https://yangoos57.github.io/posts/python/pandas/</guid>
+      <description>Hello world!! </description>
+    </item>
+    
+  </channel>
+</rss>
