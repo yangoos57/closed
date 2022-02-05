@@ -382,13 +382,14 @@ caption {
     margin-top: 0rem;
 }
 .patterns h3 {
-    font-size: 1.5rem;
+    font-size: 1rem; /*Nav font*/
 }
 .patterns h3 + ul {
     margin-top: 0.75rem;
 }
 .patterns li {
     line-height: 1.3;
+    font-size: 0.8rem; /*Nav font*/
     list-style: none;
 }
 .patterns li + li {
@@ -410,7 +411,6 @@ caption {
 }
 .pattern a:focus {
     outline: none;
-    
 }
 .pattern span {
     margin-left: 0.125rem;
@@ -935,7 +935,7 @@ h1 svg {
       border: 1px solid;
     }
     .patterns h3 {
-        font-size: 1.5rem;
+        font-size: 1rem;
         padding: 1.5rem 1rem 0.75rem;
     }
     .patterns li:not(.pattern) {
@@ -1053,4 +1053,11 @@ h1 svg {
 .main-recent{
     border:1px solid; 
     padding:10px;
+}
+.nav-box{
+    border: 1px solid #2d2d2d;
+    max-width: 300px;
+    max-height: 400px;
+    padding: 1em;
+    margin : 1em;
 }
