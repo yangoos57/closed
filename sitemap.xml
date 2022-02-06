@@ -3,45 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://yangoos57.github.io/</loc>
-    <lastmod>2022-02-03T11:14:47+09:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/posts/</loc>
-    <lastmod>2022-02-03T11:14:47+09:00</lastmod>
+    <lastmod>2022-02-06T18:30:15+09:00</lastmod>
   </url><url>
     <loc>https://yangoos57.github.io/python/</loc>
-    <lastmod>2022-02-03T11:14:47+09:00</lastmod>
+    <lastmod>2022-02-06T18:30:15+09:00</lastmod>
   </url><url>
     <loc>https://yangoos57.github.io/python/seaborn_tag/</loc>
-    <lastmod>2022-02-02T01:59:03+09:00</lastmod>
+    <lastmod>2022-02-06T18:30:15+09:00</lastmod>
   </url><url>
-    <loc>https://yangoos57.github.io/posts/python/datavisualization/</loc>
-    <lastmod>2022-02-02T01:59:03+09:00</lastmod>
+    <loc>https://yangoos57.github.io/python/seaborn/datavisualization/</loc>
+    <lastmod>2022-02-06T18:30:15+09:00</lastmod>
+  </url><url>
+    <loc>https://yangoos57.github.io/data_aanlytics/</loc>
+    <lastmod>2022-01-26T15:32:54+09:00</lastmod>
   </url><url>
     <loc>https://yangoos57.github.io/data_analytics/</loc>
     <lastmod>2022-01-26T15:32:54+09:00</lastmod>
   </url><url>
-    <loc>https://yangoos57.github.io/posts/data_aanlytics/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D-%EC%9D%B4%EB%A1%A0/</loc>
+    <loc>https://yangoos57.github.io/data_aanlytics/theory/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D-%EC%9D%B4%EB%A1%A0/</loc>
     <lastmod>2022-01-26T15:32:54+09:00</lastmod>
   </url><url>
-    <loc>https://yangoos57.github.io/posts/my-first-post/</loc>
-    <lastmod>2022-02-03T11:14:47+09:00</lastmod>
-  </url><url>
     <loc>https://yangoos57.github.io/python/pandas/</loc>
-    <lastmod>2022-02-03T11:14:47+09:00</lastmod>
+    <lastmod>2022-02-06T18:30:15+09:00</lastmod>
   </url><url>
-    <loc>https://yangoos57.github.io/posts/python/pandas/</loc>
+    <loc>https://yangoos57.github.io/python/pandas/pandas/</loc>
+    <lastmod>2022-02-06T18:30:15+09:00</lastmod>
+  </url><url>
+    <loc>https://yangoos57.github.io/personal/</loc>
     <lastmod>2022-01-26T15:32:54+09:00</lastmod>
   </url><url>
     <loc>https://yangoos57.github.io/personal/</loc>
     <lastmod>2022-01-26T15:32:54+09:00</lastmod>
   </url><url>
+    <loc>https://yangoos57.github.io/python/</loc>
+    <lastmod>2022-02-06T18:30:15+09:00</lastmod>
+  </url><url>
     <loc>https://yangoos57.github.io/python/%EA%B8%B0%EB%B3%B8%ED%95%A8%EC%88%98/</loc>
     <lastmod>2022-01-26T15:32:54+09:00</lastmod>
   </url><url>
-    <loc>https://yangoos57.github.io/posts/python/%EA%B8%B0%EB%B3%B8%ED%95%A8%EC%88%98/</loc>
+    <loc>https://yangoos57.github.io/python/basic/%EA%B8%B0%EB%B3%B8%ED%95%A8%EC%88%98/</loc>
     <lastmod>2022-01-26T15:32:54+09:00</lastmod>
   </url><url>
-    <loc>https://yangoos57.github.io/posts/personal/%EB%81%84%EC%A0%81%EB%81%84%EC%A0%81/</loc>
+    <loc>https://yangoos57.github.io/personal/writing/%EB%81%84%EC%A0%81%EB%81%84%EC%A0%81/</loc>
     <lastmod>2022-01-26T15:32:54+09:00</lastmod>
   </url><url>
     <loc>https://yangoos57.github.io/personal/%EB%81%84%EC%A0%81%EB%81%84%EC%A0%81/</loc>
@@ -53,16 +56,13 @@
     <loc>https://yangoos57.github.io/data_analytics/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC/</loc>
     <lastmod>2022-01-26T15:32:54+09:00</lastmod>
   </url><url>
-    <loc>https://yangoos57.github.io/posts/data_aanlytics/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC/</loc>
+    <loc>https://yangoos57.github.io/data_aanlytics/preprocessing/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC/</loc>
     <lastmod>2022-01-26T15:32:54+09:00</lastmod>
   </url><url>
     <loc>https://yangoos57.github.io/data_analytics/%EB%B6%84%EC%84%9D-%EC%8B%A4%EB%AC%B4/</loc>
     <lastmod>2022-01-26T15:32:54+09:00</lastmod>
   </url><url>
-    <loc>https://yangoos57.github.io/posts/data_aanlytics/%EB%B6%84%EC%84%9D%EC%8B%A4%EB%AC%B4/</loc>
+    <loc>https://yangoos57.github.io/data_aanlytics/practice/%EB%B6%84%EC%84%9D%EC%8B%A4%EB%AC%B4/</loc>
     <lastmod>2022-01-26T15:32:54+09:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/posts/python/</loc>
-    <lastmod>2022-02-02T01:59:03+09:00</lastmod>
   </url>
 </urlset>
