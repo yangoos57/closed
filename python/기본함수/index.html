@@ -58,45 +58,7 @@
     <link rel="stylesheet" href="/css/custom_02.css">
   
 </head>
-  <style>
-  #test{
-    width: 50em;
-    height: 4em;
-    margin-left: 18em;
-    padding: 2em;
-    padding-bottom: 0em;
-    text-align: center;
-  } 
-  #test ul li {
-    list-style: none;
-    display : inline;
-  }
-</style>
-
-
-<div id ='test'>
-  <ul>
-  <li style="float: center">
-    <h2 style="display : inline">Hello center</h2>
-  </li>
-
-  <li style="float: right">
-      <input
-    id="search"
-    type="text"
-    placeholder="Search by title..."
-    aria-label="Search by title"
-    size="10"
-    />
-  </li>
-</ul>
-</div>
-
-
-
-
   <body>
-    
     <noscript>
   <style>
     body {
@@ -105,8 +67,7 @@
     }
   </style>
 </noscript>
-
-    <svg style="display: none">
+ <svg style="display: none">
   <symbol id="bookmark" viewBox="0 0 40 50">
    <g transform="translate(2266 3206.2)">
     <path style="stroke:currentColor;stroke-width:3.2637;fill:none" d="m-2262.2-3203.4-.2331 42.195 16.319-16.318 16.318 16.318.2331-42.428z"/>
@@ -195,117 +156,42 @@
  </symbol>
 </svg>
 
-    <div class="wrapper">
-      <header class="intro-and-nav" role="banner">
-    <nav id = 'patterns-nav'class="patterns" role="navigation">
-  <div class="nav-box">
-  <h3><a href="/" style="text-decoration-line: none" >전체보기_(7)</a></h3>
-
-    <ul>
-       
-      
-        <li style="margin-bottom :0.3em;">
-         <h3>Data_analytics</h3> 
-          <hr>
-      </li>
-      <ul style="margin-left: 0;">
-        
-        
-        <li>
-          <div style="margin-bottom :0.2em;">
-            <a href="/data_analytics/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D-%EC%9D%B4%EB%A1%A0"
-            style="text-decoration-line: none">데이터-분석-이론_(1) </a>
-          </div>
-        </a>
-      </li>
-        
-        
-        <li>
-          <div style="margin-bottom :0.2em;">
-            <a href="/data_analytics/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC"
-            style="text-decoration-line: none">데이터-전처리_(1) </a>
-          </div>
-        </a>
-      </li>
-        
-        
-        <li>
-          <div style="margin-bottom :0.2em;">
-            <a href="/data_analytics/%EB%B6%84%EC%84%9D-%EC%8B%A4%EB%AC%B4"
-            style="text-decoration-line: none">분석-실무_(1) </a>
-          </div>
-        </a>
-      </li>
-        
-        <br>
-      </ul>
-       
-      
-        <li style="margin-bottom :0.3em;">
-         <h3>Personal</h3> 
-          <hr>
-      </li>
-      <ul style="margin-left: 0;">
-        
-        
-        <li>
-          <div style="margin-bottom :0.2em;">
-            <a href="/personal/%EB%81%84%EC%A0%81%EB%81%84%EC%A0%81"
-            style="text-decoration-line: none">끄적끄적_(1) </a>
-          </div>
-        </a>
-      </li>
-        
-        <br>
-      </ul>
-       
-      
-        <li style="margin-bottom :0.3em;">
-         <h3>python</h3> 
-          <hr>
-      </li>
-      <ul style="margin-left: 0;">
-        
-        
-        <li>
-          <div style="margin-bottom :0.2em;">
-            <a href="/python/pandas"
-            style="text-decoration-line: none">pandas_(1) </a>
-          </div>
-        </a>
-      </li>
-        
-        
-        <li>
-          <div style="margin-bottom :0.2em;">
-            <a href="/python/seaborn_tag"
-            style="text-decoration-line: none">seaborn_tag_(1) </a>
-          </div>
-        </a>
-      </li>
-        
-        
-        <li>
-          <div style="margin-bottom :0.2em;">
-            <a href="/python/%EA%B8%B0%EB%B3%B8%ED%95%A8%EC%88%98"
-            style="text-decoration-line: none">기본함수_(1) </a>
-          </div>
-        </a>
-      </li>
-        
-        <br>
-      </ul>
-      
-    </ul>
-  </div>  
-<nav>
     
+    <style>
+  #header {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  #header > div {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+  }
+  #header.div2 {
+    float: left;
+    flex-direction: column;
+  }
+</style>
+
+<header id="header">
+  <div>
+    <div></div>
+    <div><img src="/favicon-96x96.png" /></div>
+    <div>
+      <div>&nbsp;</div>
+      <div>
+  <input id="search" type="text" placeholder="Search by title..." aria-label="Search by title" size="10" />
+</div>
+
+      <div>&nbsp;</div>
+    </div>
   </div>
 </header>
 
-      <div class="main-and-footer">
-        <div class >
-          
+    
+    
 <main id="main">
   <h1>기본함수</h1>
   
@@ -340,16 +226,15 @@
   </ul>
 </main>
 
-          <footer role="contentinfo">
+    
+    <footer role="contentinfo">
   <div> 
      <input id="themer" class="vh">
   </div>
   내용을 추가합시다.
 </footer>
 
-        </div>
-      </div>
-    </div>
+    
     
 
 <script src="/js/dom-scripts.js"></script>  
@@ -370,10 +255,12 @@
 
 
     
+    
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-
+ 
+    
     
   
   <script>
