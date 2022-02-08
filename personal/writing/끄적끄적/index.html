@@ -21,31 +21,6 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-  <style>
-    body {
-      visibility: hidden;
-      opacity: 0;
-    }
-  </style>
-
-  <style id="darkTheme">
-    .intro-and-nav,
-    .main-and-footer {
-      filter: invert(10%);
-    }
-
-    * {
-      background-color: inherit
-    }
-
-    img:not([src*=".svg"]),
-    .colors,
-    iframe,
-    .demo-container {
-      filter: invert(1%);
-    }
-  </style>
-
   <link rel="stylesheet" href="/css/prism.css" media="none" onload="this.media='all';">
 
   
@@ -157,35 +132,18 @@
 </svg>
 
     
-    <style>
-  #header {
-    width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  #header > div {
-    width: 100%;
-    float: left;
-    display: flex;
-    justify-content: space-between;
-  }
-  #header.div2 {
-    float: left;
-    flex-direction: column;
-  }
-</style>
-
-<header id="header">
-  <div>
-    <div></div>
-    <div><img src="/favicon-96x96.png" /></div>
-    <div>
-      <div>&nbsp;</div>
+    <header id="header">
+  <div class = 'flex'>
+    <div class= 'div_space'>&nbsp;</div>
+    <div OnClick="location.href ='/'" class = "title">
+      <h1>양구스 데이터 아카이브</h1>
+      <h2>Yangoos Data Archive</h2>
+    </div>
+    <div class="'div_search">
       <div>
   <input id="search" type="text" placeholder="Search by title..." aria-label="Search by title" size="10" />
 </div>
 
-      <div>&nbsp;</div>
     </div>
   </div>
 </header>
@@ -193,10 +151,105 @@
     
     
   <main id="main">
-    <h1>끄적그적_title</h1>
-    <aside></aside>
-    <h5>Hello world!!</h5>
+    
+  <aside id="aside">
+    <div class ="box">
+      <h5><a href="/">전체보기_(7)</a></h5>
+      <br><br>
+        
+        <ul>
+           
+          
+            <li>
+              <h5>Data_analytics</h5>
+              <hr>
+            </li>
+            
+          <ul>
+           
+            
+            <li>
+              <a href="/data_analytics/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D-%EC%9D%B4%EB%A1%A0">
+                <h6>데이터-분석-이론_(1)</h6>
+              </a>
+            </li>
+            
+            
+            <li>
+              <a href="/data_analytics/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC">
+                <h6>데이터-전처리_(1)</h6>
+              </a>
+            </li>
+            
+            
+            <li>
+              <a href="/data_analytics/%EB%B6%84%EC%84%9D-%EC%8B%A4%EB%AC%B4">
+                <h6>분석-실무_(1)</h6>
+              </a>
+            </li>
+            
+          </ul>
+          <br><br>
+           
+          
+            <li>
+              <h5>Personal</h5>
+              <hr>
+            </li>
+            
+          <ul>
+           
+            
+            <li>
+              <a href="/personal/%EB%81%84%EC%A0%81%EB%81%84%EC%A0%81">
+                <h6>끄적끄적_(1)</h6>
+              </a>
+            </li>
+            
+          </ul>
+          <br><br>
+           
+          
+            <li>
+              <h5>python</h5>
+              <hr>
+            </li>
+            
+          <ul>
+           
+            
+            <li>
+              <a href="/python/pandas">
+                <h6>pandas_(1)</h6>
+              </a>
+            </li>
+            
+            
+            <li>
+              <a href="/python/seaborn_tag">
+                <h6>seaborn_tag_(1)</h6>
+              </a>
+            </li>
+            
+            
+            <li>
+              <a href="/python/%EA%B8%B0%EB%B3%B8%ED%95%A8%EC%88%98">
+                <h6>기본함수_(1)</h6>
+              </a>
+            </li>
+            
+          </ul>
+          <br><br>
+          
+        </ul>
+    </div>  
+  </aside>
+    <section id="section">
+      <h1>끄적그적_title</h1>
+      2022-01-26
+      <h5>Hello world!!</h5>
 
+    </section>
   </main>
 
     
@@ -218,7 +271,7 @@
 
 <script src="/js/search.da4e0819db35e5fc5289562d46cf4a2173684e337d69d997639a24b79ecd6416.js"></script>
 
-<link rel="stylesheet" href="/css/search.7f01cb6ed1461a0c50a305ef748738486fafe1d6347608be275b056ad64333b1.css"></link>
+<link rel="stylesheet" href="/css/search.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css"></link>
 
 
 
