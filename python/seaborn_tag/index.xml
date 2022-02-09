@@ -13,7 +13,9 @@
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://yangoos57.github.io/python/seaborn/datavisualization/</guid>
-      <description>Markdown 단축키 M 함수 단축키 A Goal  the course is aimed at those with no prior programming experience. each chart uses short and simple code, making seaborn much faster and easier to use than many other data visualization tools (such as Excel, for instance).  import pandas as pd pd.plotting.register_matplotlib_converters() ## 뭐지? import matplotlib.pyplot as plt ## %가 뭐지 %matplotlib inline import seaborn as sns filepath = &amp;#39;D:/git_local_repository/yangoos57/kaggle/courses/Data Visualization/Data_set/&amp;#39; fifa_data = pd.</description>
+      <description>Markdown 단축키 M 함수 단축키 A Goal 4번째 5번째 6번째 ####### 7번째
+li는 line style이 있어야한다. P도 신경쓰자 role region도 신경쓰기
+ the course is aimed at those with no prior programming experience.  each chart uses short and simple code, making seaborn much faster and easier to use than many other data visualization tools (such as Excel, for instance).  import pandas as pd pd.plotting.register_matplotlib_converters() ## 뭐지? import matplotlib.pyplot as plt ## %가 뭐지 %matplotlib inline import seaborn as sns filepath = &amp;#39;D:/git_local_repository/yangoos57/kaggle/courses/Data Visualization/Data_set/&amp;#39; fifa_data = pd.</description>
     </item>
     
   </channel>
