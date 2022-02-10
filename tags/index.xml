@@ -1,18 +1,80 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Hello world!</title>
-    <link>https://yangoos57.github.io/tags/</link>
-    <description>Recent content in Tags on Hello world!</description>
+    <title>Tags on Yangoos Archive</title>
+    <link>https://demo.gethugothemes.com/tags/</link>
+    <description>Recent content in Tags on Yangoos Archive</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yangoos57.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.gethugothemes.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>123</title>
-      <link>https://yangoos57.github.io/tags/123/</link>
-      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
+      <title>markdown</title>
+      <link>https://demo.gethugothemes.com/tags/markdown/</link>
+      <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yangoos57.github.io/tags/123/</guid>
+      <guid>https://demo.gethugothemes.com/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>text</title>
+      <link>https://demo.gethugothemes.com/tags/text/</link>
+      <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://demo.gethugothemes.com/tags/text/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>css</title>
+      <link>https://demo.gethugothemes.com/tags/css/</link>
+      <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://demo.gethugothemes.com/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://demo.gethugothemes.com/tags/html/</link>
+      <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://demo.gethugothemes.com/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>themes</title>
+      <link>https://demo.gethugothemes.com/tags/themes/</link>
+      <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://demo.gethugothemes.com/tags/themes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emoji</title>
+      <link>https://demo.gethugothemes.com/tags/emoji/</link>
+      <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://demo.gethugothemes.com/tags/emoji/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>privacy</title>
+      <link>https://demo.gethugothemes.com/tags/privacy/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://demo.gethugothemes.com/tags/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shortcodes</title>
+      <link>https://demo.gethugothemes.com/tags/shortcodes/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://demo.gethugothemes.com/tags/shortcodes/</guid>
       <description></description>
     </item>
     

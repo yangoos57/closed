@@ -1,39 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pythons on Hello world!</title>
-    <link>https://yangoos57.github.io/python/</link>
-    <description>Recent content in Pythons on Hello world!</description>
+    <title>python-branch-bundle on Yangoos Archive</title>
+    <link>https://demo.gethugothemes.com/python/</link>
+    <description>Recent content in python-branch-bundle on Yangoos Archive</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 02 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yangoos57.github.io/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jan 2022 15:32:54 +0900</lastBuildDate><atom:link href="https://demo.gethugothemes.com/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Seaborn에 내장되어있는 함수 기능을 알아보자.</title>
-      <link>https://yangoos57.github.io/python/seaborn/datavisualization/</link>
-      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+      <link>https://demo.gethugothemes.com/python/seaborn/datavisualization/</link>
+      <pubDate>Wed, 09 Feb 2022 11:07:10 +0600</pubDate>
       
-      <guid>https://yangoos57.github.io/python/seaborn/datavisualization/</guid>
-      <description>Markdown 단축키 M 함수 단축키 A Goal 4번째 5번째 6번째 ####### 7번째
-li는 line style이 있어야한다. P도 신경쓰자 role region도 신경쓰기
- the course is aimed at those with no prior programming experience.  each chart uses short and simple code, making seaborn much faster and easier to use than many other data visualization tools (such as Excel, for instance).  import pandas as pd pd.plotting.register_matplotlib_converters() ## 뭐지? import matplotlib.pyplot as plt ## %가 뭐지 %matplotlib inline import seaborn as sns filepath = &amp;#39;D:/git_local_repository/yangoos57/kaggle/courses/Data Visualization/Data_set/&amp;#39; fifa_data = pd.</description>
+      <guid>https://demo.gethugothemes.com/python/seaborn/datavisualization/</guid>
+      <description>Markdown 단축키 M 함수 단축키 A Goal 4번째 5번째 6번째 li는 line style이 있어야한다.
+P도 신경쓰자
+role region도 신경쓰기
+ the course is aimed at those with no prior programming experience.</description>
     </item>
     
     <item>
       <title>Pandas_title</title>
-      <link>https://yangoos57.github.io/python/pandas/pandas/</link>
+      <link>https://demo.gethugothemes.com/python/pandas/pandas/</link>
       <pubDate>Wed, 26 Jan 2022 15:32:54 +0900</pubDate>
       
-      <guid>https://yangoos57.github.io/python/pandas/pandas/</guid>
+      <guid>https://demo.gethugothemes.com/python/pandas/pandas/</guid>
       <description>Hello world!!</description>
     </item>
     
     <item>
       <title>기본함수_Title</title>
-      <link>https://yangoos57.github.io/python/basic/%EA%B8%B0%EB%B3%B8%ED%95%A8%EC%88%98/</link>
+      <link>https://demo.gethugothemes.com/python/basic/%EA%B8%B0%EB%B3%B8%ED%95%A8%EC%88%98/</link>
       <pubDate>Wed, 26 Jan 2022 15:32:54 +0900</pubDate>
       
-      <guid>https://yangoos57.github.io/python/basic/%EA%B8%B0%EB%B3%B8%ED%95%A8%EC%88%98/</guid>
+      <guid>https://demo.gethugothemes.com/python/basic/%EA%B8%B0%EB%B3%B8%ED%95%A8%EC%88%98/</guid>
       <description>Hello world!!</description>
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>https://demo.gethugothemes.com/python/seaborn/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://demo.gethugothemes.com/python/seaborn/markdown-syntax/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
   </channel>
