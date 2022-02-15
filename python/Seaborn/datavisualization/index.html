@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="../../../css/primer.css">
     
@@ -16,6 +17,10 @@
     <link rel="stylesheet" href="../../../css/prism.css" media="none" onload="this.media='all';">
     <script defer language="javascript" type="text/javascript"  src="../../../js/prism.js"></script>
 
+    
+    <script defer language="javascript" type="text/javascript"  src="../../../js/medium-zoom.js"></script>
+    <script defer language="javascript" type="text/javascript"  src="../../../js/zoom_custom.js"></script>
+    
 </head>
 
   <body>
@@ -23,7 +28,7 @@
     <div id="holy" class="bg-white">
       
       <header id="header" class="col-12 px-1 bg-white">
-            <div OnClick="location.href ='/'" class = "title my-5">
+            <div OnClick="location.href ='/'" class = "title">
       <h1>양구스 데이터 아카이브</h1>
       <h2>Yangoos Data Archive</h2>
     </div>
@@ -39,6 +44,15 @@
       </div>
       <div class="Subhead-description">
         
+
+
+<span class="badge rounded-pill text-dark " style="background-color: rgb(245, 245, 245);">python</span>
+
+<span class="badge rounded-pill text-dark " style="background-color: rgb(245, 245, 245);">seaborn</span>
+
+
+
+
 
 
 
@@ -169,7 +183,15 @@ fifa_data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</
 sns<span style="color:#f92672">.</span>lineplot(data<span style="color:#f92672">=</span>fifa_data)
 </code></pre></div><pre><code>&lt;AxesSubplot:xlabel='Date'&gt;
 </code></pre>
-<p><img src="../../../Datavisualization_files/Datavisualization_6_1.png" alt="png"></p>
+<p>
+
+
+
+
+
+
+<img src="../../../images/post/python/seaborn//Datavisualization_files/Datavisualization_6_1.png">
+</p>
 <h3 id="practice">Practice</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-python" data-lang="python">spotify_data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(filepath<span style="color:#f92672">+</span><span style="color:#e6db74">&#39;spotify.csv&#39;</span>, index_col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Date&#39;</span>, parse_dates<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
 spotify_data<span style="color:#f92672">.</span>head()
@@ -317,7 +339,15 @@ spotify_data<span style="color:#f92672">.</span>head()
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-python" data-lang="python">sns<span style="color:#f92672">.</span>lineplot(data<span style="color:#f92672">=</span>spotify_data)
 </code></pre></div><pre><code>&lt;AxesSubplot:xlabel='Date'&gt;
 </code></pre>
-<p><img src="../../../Datavisualization_files/Datavisualization_10_1.png" alt="png"></p>
+<p>
+
+
+
+
+
+
+<img src="../../../images/post/python/seaborn//Datavisualization_files/Datavisualization_10_1.png">
+</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-python" data-lang="python"><span style="color:#75715e">## 분석결과 사이즈 설정(W,H)</span>
 plt<span style="color:#f92672">.</span>figure(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">14</span>,<span style="color:#ae81ff">6</span>)) 
 
@@ -327,7 +357,15 @@ plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Da
 sns<span style="color:#f92672">.</span>lineplot(data<span style="color:#f92672">=</span>spotify_data)
 </code></pre></div><pre><code>&lt;AxesSubplot:title={'center':'Daily Global Streams of Popular Songs in 2017-2018'}, xlabel='Date'&gt;
 </code></pre>
-<p><img src="../../../Datavisualization_files/Datavisualization_11_1.png" alt="png"></p>
+<p>
+
+
+
+
+
+
+<img src="../../../images/post/python/seaborn//Datavisualization_files/Datavisualization_11_1.png">
+</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-python" data-lang="python">list(spotify_data<span style="color:#f92672">.</span>columns)
 </code></pre></div><pre><code>['Shape of You',
  'Despacito',
@@ -344,7 +382,15 @@ sns<span style="color:#f92672">.</span>lineplot(data<span style="color:#f92672">
 plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;Date&#34;</span>)
 </code></pre></div><pre><code>Text(0.5, 0, 'Date')
 </code></pre>
-<p><img src="../../../Datavisualization_files/Datavisualization_13_1.png" alt="png"></p>
+<p>
+
+
+
+
+
+
+<img src="../../../images/post/python/seaborn//Datavisualization_files/Datavisualization_13_1.png">
+</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-python" data-lang="python">flight_data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(filepath<span style="color:#f92672">+</span><span style="color:#e6db74">&#39;flight_delays.csv&#39;</span>, index_col<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Month&#39;</span>)
 
 </code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-python" data-lang="python">flight_data
@@ -611,7 +657,15 @@ sns<span style="color:#f92672">.</span>barplot(x<span style="color:#f92672">=</s
 plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;Arrival delay (in minutes)&#34;</span>)
 </code></pre></div><pre><code>Text(0, 0.5, 'Arrival delay (in minutes)')
 </code></pre>
-<p><img src="../../../Datavisualization_files/Datavisualization_16_1.png" alt="png"></p>
+<p>
+
+
+
+
+
+
+<img src="../../../images/post/python/seaborn//Datavisualization_files/Datavisualization_16_1.png">
+</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-python" data-lang="python">plt<span style="color:#f92672">.</span>figure(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">14</span>,<span style="color:#ae81ff">7</span>))
 plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#34;Average Arrival Delay for Each Airline, by Month&#34;</span>)
 
@@ -620,7 +674,15 @@ plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;A
 
 </code></pre></div><pre><code>Text(0.5, 42.0, 'Airline')
 </code></pre>
-<p><img src="../../../Datavisualization_files/Datavisualization_17_1.png" alt="png"></p>
+<p>
+
+
+
+
+
+
+<img src="../../../images/post/python/seaborn//Datavisualization_files/Datavisualization_17_1.png">
+</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-python" data-lang="python">iris_data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(filepath<span style="color:#f92672">+</span><span style="color:#e6db74">&#39;iris.csv&#39;</span>)
 
 iris_data<span style="color:#f92672">.</span>head()
@@ -707,20 +769,60 @@ iris_data<span style="color:#f92672">.</span>head()
 
 &lt;AxesSubplot:xlabel='Petal Length (cm)'&gt;
 </code></pre>
-<p><img src="../../../Datavisualization_files/Datavisualization_19_2.png" alt="png"></p>
+<p>
+
+
+
+
+
+
+<img src="../../../images/post/python/seaborn//Datavisualization_files/Datavisualization_19_2.png">
+</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-python" data-lang="python">sns<span style="color:#f92672">.</span>distplot(a<span style="color:#f92672">=</span>iris_data[<span style="color:#e6db74">&#39;Petal Length (cm)&#39;</span>], kde<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
 </code></pre></div><pre><code>&lt;AxesSubplot:xlabel='Petal Length (cm)', ylabel='Density'&gt;
 </code></pre>
-<p><img src="../../../Datavisualization_files/Datavisualization_20_1.png" alt="png"></p>
+<p>
+
+
+
+
+
+
+<img src="../../../images/post/python/seaborn//Datavisualization_files/Datavisualization_20_1.png">
+</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-python" data-lang="python">sns<span style="color:#f92672">.</span>kdeplot(data<span style="color:#f92672">=</span>iris_data[<span style="color:#e6db74">&#39;Petal Length (cm)&#39;</span>], shade<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
 </code></pre></div><pre><code>&lt;AxesSubplot:xlabel='Petal Length (cm)', ylabel='Density'&gt;
 </code></pre>
-<p><img src="../../../Datavisualization_files/Datavisualization_21_1.png" alt="png"></p>
+<p>
+
+
+
+
+
+
+<img src="../../../images/post/python/seaborn//Datavisualization_files/Datavisualization_21_1.png">
+</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-python" data-lang="python">sns<span style="color:#f92672">.</span>jointplot(x<span style="color:#f92672">=</span>iris_data[<span style="color:#e6db74">&#39;Petal Length (cm)&#39;</span>], y<span style="color:#f92672">=</span>iris_data[<span style="color:#e6db74">&#39;Sepal Width (cm)&#39;</span>], kind<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;kde&#39;</span>)
 </code></pre></div><pre><code>&lt;seaborn.axisgrid.JointGrid at 0x1fc48b64fa0&gt;
 </code></pre>
-<p><img src="../../../Datavisualization_files/Datavisualization_22_1.png" alt="png"></p>
-<p><img src="https://imgur.com/2VmgDnF.png" alt="스크린샷"></p>
+<p>
+
+
+
+
+
+
+<img src="../../../images/post/python/seaborn//Datavisualization_files/Datavisualization_22_1.png">
+</p>
+<p>
+
+
+
+
+
+
+<img src="../../../images/post/python/seaborn/https://imgur.com/2VmgDnF.png">
+</p>
 
       </section>
     
@@ -730,13 +832,40 @@ iris_data<span style="color:#f92672">.</span>head()
         
       </section>
     </article>
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function () {
     
-      </main> 
-      
+    
+    if (window.location.hostname == "localhost") return;
+
+    var dsq = document.createElement("script");
+    dsq.type = "text/javascript";
+    dsq.async = true;
+    var disqus_shortname = "";
+    dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+    (
+      document.getElementsByTagName("head")[0] ||
+      document.getElementsByTagName("body")[0]
+    ).appendChild(dsq);
+  })();
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+<a href="https://disqus.com/" class="dsq-brlink"
+  >comments powered by <span class="logo-disqus">Disqus</span></a
+>
+
+    
+      </main>
       <div id="sidea_single">        
-      <aside style="position: fixed; left:0% ; top:50% ">
+        <aside class="offcan-left">
 <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-  <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
   </svg>
 </button>
@@ -752,7 +881,7 @@ iris_data<span style="color:#f92672">.</span>head()
           <a href="../../../">
           전체보기
           <span class="badge bg-light text-dark rounded-pill">
-            13
+            5
           </span>
           </a>
         </h6>
@@ -761,18 +890,21 @@ iris_data<span style="color:#f92672">.</span>head()
           <ul class="ps-0" style="list-style: none;">
             
             
-            <li><h5>Category</h5><hr></li>
-            <ul class="ps-2" style="list-style: none;">
-            </ul>
-             
-            <br>
-            
-            
             <li><h5>Data_Analytics</h5><hr></li>
             <ul class="ps-2" style="list-style: none;">
               <li>
-              <a href="../../../data_analytics/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D-%EC%9D%B4%EB%A1%A0">
-                  데이터-분석-이론
+              <a href="../../../data_analytics/practice">
+                  practice
+                <span class="badge bg-light text-dark rounded-pill">
+                  1
+                </span>
+                <br>
+              </a>
+              </li>
+              
+              <li>
+              <a href="../../../data_analytics/theory">
+                  theory
                 <span class="badge bg-light text-dark rounded-pill">
                   1
                 </span>
@@ -783,23 +915,6 @@ iris_data<span style="color:#f92672">.</span>head()
               <li>
               <a href="../../../data_analytics/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC">
                   데이터-전처리
-                <span class="badge bg-light text-dark rounded-pill">
-                  1
-                </span>
-                <br>
-              </a>
-              </li>
-              
-            </ul>
-             
-            <br>
-            
-            
-            <li><h5>Personal</h5><hr></li>
-            <ul class="ps-2" style="list-style: none;">
-              <li>
-              <a href="../../../personal/%EB%81%84%EC%A0%81%EB%81%84%EC%A0%81">
-                  끄적끄적
                 <span class="badge bg-light text-dark rounded-pill">
                   1
                 </span>
@@ -834,17 +949,10 @@ iris_data<span style="color:#f92672">.</span>head()
               </a>
               </li>
               
-              <li>
-              <a href="../../../python/%EA%B8%B0%EB%B3%B8%ED%95%A8%EC%88%98">
-                  기본함수
-                <span class="badge bg-light text-dark rounded-pill">
-                  1
-                </span>
-                <br>
-              </a>
-              </li>
-              
             </ul>
+             
+            <br>
+            
              
             <br>
             
@@ -853,8 +961,90 @@ iris_data<span style="color:#f92672">.</span>head()
   </div>
 </div>
 </aside>
+      </div>
       
-    </div>
+        <div id="sidea_list" class="px-1 bg-white">        
+        <aside>
+  <div class ="nav-box">
+    <h6>
+      <a href="../../../">
+      전체보기
+      <span class="badge bg-light text-dark rounded-pill">
+        5
+      </span>
+      </a>
+    </h6>
+    <br>
+      
+      <ul class="ps-0">
+        
+        
+        <li><h5>Data_Analytics</h5><hr></li>
+        <ul class="ps-2 text-"><li>
+          <a href="../../../data_analytics/practice">
+              practice
+            <span class="badge bg-light text-dark rounded-pill">
+              1
+            </span>
+            <br>
+          </a>
+        </li>
+        <li>
+          <a href="../../../data_analytics/theory">
+              theory
+            <span class="badge bg-light text-dark rounded-pill">
+              1
+            </span>
+            <br>
+          </a>
+        </li>
+        <li>
+          <a href="../../../data_analytics/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC">
+              데이터-전처리
+            <span class="badge bg-light text-dark rounded-pill">
+              1
+            </span>
+            <br>
+          </a>
+        </li>
+        
+      </ul>
+         
+        <br>
+        
+        
+        <li><h5>Python</h5><hr></li>
+        <ul class="ps-2 text-"><li>
+          <a href="../../../python/pandas">
+              pandas
+            <span class="badge bg-light text-dark rounded-pill">
+              1
+            </span>
+            <br>
+          </a>
+        </li>
+        <li>
+          <a href="../../../python/seaborn">
+              seaborn
+            <span class="badge bg-light text-dark rounded-pill">
+              1
+            </span>
+            <br>
+          </a>
+        </li>
+        
+      </ul>
+         
+        <br>
+        
+         
+        <br>
+        
+      </ul>
+  </div>  
+</aside>
+        </div>
+      
       
       <div id="sideb_list" class="pr-1 bg-white">
         <aside class="pr-3">
@@ -888,7 +1078,7 @@ iris_data<span style="color:#f92672">.</span>head()
     
         </aside>
       </div>
-      <div id ="sideb_single"><aside style="position: fixed; right:0 ; top:50% ">
+      <div id ="sideb_single"><aside class="offcan-right">
 <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
     <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
@@ -932,9 +1122,10 @@ iris_data<span style="color:#f92672">.</span>head()
 </div>
 </div>
       
-
-      <div id="footer" class="pt-2 pb-3 bg-white text-center">
-        
+    </div>
+  </body>
+  <div id="footer" class="pt-2 pb-3 bg-white text-center">
+    
 
 
   <div class="m-5 text-small text-gray">
@@ -946,9 +1137,6 @@ iris_data<span style="color:#f92672">.</span>head()
   </div>
 
 
-      </div>
-
-    </div>
-  </body>
-
+  </div>
+  
 </html>

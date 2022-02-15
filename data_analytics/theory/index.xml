@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>theory on Yangoos Archive</title>
+    <link>https://yangoos57.github.io/data_analytics/theory/</link>
+    <description>Recent content in theory on Yangoos Archive</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 09 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yangoos57.github.io/data_analytics/theory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Concept and Branching</title>
+      <link>https://yangoos57.github.io/data_analytics/theory/git_concept_and_branching/</link>
+      <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yangoos57.github.io/data_analytics/theory/git_concept_and_branching/</guid>
+      <description>Git Concept   Snapshot
+Git은 다른 버전관리 프로그램과 다르게 snapshot이라는 개념을 사용한다. 다른 버전관리 시스템은 (내가 안써봐서 어떤 식으로 진행되는지 잘 모르겠으나) 버전 관리를 할 때 파일별로 버전관리를 하는데 반면(그림 1참조) Git은 매번 전체 그림을 저장한다.</description>
+    </item>
+    
+  </channel>
+</rss>
