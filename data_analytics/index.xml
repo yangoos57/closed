@@ -1,37 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data_Analytics on Yangoos Archive</title>
+    <title>Data_Analytics on Leeway</title>
     <link>https://yangoos57.github.io/data_analytics/</link>
-    <description>Recent content in Data_Analytics on Yangoos Archive</description>
+    <description>Recent content in Data_Analytics on Leeway</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 09 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yangoos57.github.io/data_analytics/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Git Concept and Branching</title>
-      <link>https://yangoos57.github.io/data_analytics/theory/git_concept_and_branching/</link>
+      <title>theory</title>
+      <link>https://yangoos57.github.io/data_analytics/theory/</link>
       <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yangoos57.github.io/data_analytics/theory/git_concept_and_branching/</guid>
-      <description>Git Concept   Snapshot
-Git은 다른 버전관리 프로그램과 다르게 snapshot이라는 개념을 사용한다. 다른 버전관리 시스템은 (내가 안써봐서 어떤 식으로 진행되는지 잘 모르겠으나) 버전 관리를 할 때 파일별로 버전관리를 하는데 반면(그림 1참조) Git은 매번 전체 그림을 저장한다.</description>
+      <guid>https://yangoos57.github.io/data_analytics/theory/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>데이터 전처리_title</title>
-      <link>https://yangoos57.github.io/data_analytics/preprocessing/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC/</link>
+      <title>practice</title>
+      <link>https://yangoos57.github.io/data_analytics/practice/</link>
       <pubDate>Wed, 26 Jan 2022 15:32:54 +0900</pubDate>
       
-      <guid>https://yangoos57.github.io/data_analytics/preprocessing/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC/</guid>
-      <description>Hello world!!</description>
+      <guid>https://yangoos57.github.io/data_analytics/practice/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>분석 실무_title</title>
-      <link>https://yangoos57.github.io/data_analytics/practice/%EB%B6%84%EC%84%9D%EC%8B%A4%EB%AC%B4/</link>
+      <title>데이터 전처리</title>
+      <link>https://yangoos57.github.io/data_analytics/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC/</link>
       <pubDate>Wed, 26 Jan 2022 15:32:54 +0900</pubDate>
       
-      <guid>https://yangoos57.github.io/data_analytics/practice/%EB%B6%84%EC%84%9D%EC%8B%A4%EB%AC%B4/</guid>
-      <description>Hello world!!</description>
+      <guid>https://yangoos57.github.io/data_analytics/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC/</guid>
+      <description></description>
     </item>
     
   </channel>
