@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terms on Leeway</title>
+    <link>https://yangoos57.github.io/data_analytics/terms/</link>
+    <description>Recent content in Terms on Leeway</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 19 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yangoos57.github.io/data_analytics/terms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>데이터 분석 용어정리</title>
+      <link>https://yangoos57.github.io/data_analytics/terms/terms/</link>
+      <pubDate>Sat, 19 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yangoos57.github.io/data_analytics/terms/terms/</guid>
+      <description>CH2 Classification, Regression Classification은 대상을 구분짓는 문제로 최적의 Decision Boundary를 찾는게 목적이다.
+ Whether something will happen?
+ Q. 목동에 거주하는 30대 남자가 A라는 홍보에 효과를 거둘 수 있을까?</description>
+    </item>
+    
+  </channel>
+</rss>
