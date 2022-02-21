@@ -4,67 +4,6 @@
     <title>Leeway</title>
     <link>https://yangoos57.github.io/</link>
     <description>Recent content on Leeway</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 19 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yangoos57.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>데이터 분석 용어정리</title>
-      <link>https://yangoos57.github.io/data_analytics/terms/terms/</link>
-      <pubDate>Sat, 19 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://yangoos57.github.io/data_analytics/terms/terms/</guid>
-      <description>CH2 Classification, Regression Classification은 대상을 구분짓는 문제로 최적의 Decision Boundary를 찾는게 목적이다.
- Whether something will happen?
- Q. 목동에 거주하는 30대 남자가 A라는 홍보에 효과를 거둘 수 있을까?</description>
-    </item>
-    
-    <item>
-      <title>Seaborn에 내장되어있는 함수 기능을 알아보자.</title>
-      <link>https://yangoos57.github.io/python/seaborn/datavisualization/</link>
-      <pubDate>Wed, 09 Feb 2022 11:07:10 +0600</pubDate>
-      
-      <guid>https://yangoos57.github.io/python/seaborn/datavisualization/</guid>
-      <description>Markdown 단축키 M 함수 단축키 A Goal 4번째 5번째 6번째 li는 line style이 있어야한다.
-P도 신경쓰자
-role region도 신경쓰기
- the course is aimed at those with no prior programming experience.</description>
-    </item>
-    
-    <item>
-      <title>Git Concept and Branching</title>
-      <link>https://yangoos57.github.io/data_analytics/theory/git_concept_and_branching/</link>
-      <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://yangoos57.github.io/data_analytics/theory/git_concept_and_branching/</guid>
-      <description>Git Concept   Snapshot
-Git은 다른 버전관리 프로그램과 다르게 snapshot이라는 개념을 사용한다. 다른 버전관리 시스템은 (내가 안써봐서 어떤 식으로 진행되는지 잘 모르겠으나) 버전 관리를 할 때 파일별로 버전관리를 하는데 반면(그림 1참조) Git은 매번 전체 그림을 저장한다.</description>
-    </item>
-    
-    <item>
-      <title>Pandas_title</title>
-      <link>https://yangoos57.github.io/python/pandas/pandas_title/</link>
-      <pubDate>Wed, 26 Jan 2022 15:32:54 +0900</pubDate>
-      
-      <guid>https://yangoos57.github.io/python/pandas/pandas_title/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>데이터 전처리_title</title>
-      <link>https://yangoos57.github.io/data_analytics/preprocessing/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC/</link>
-      <pubDate>Wed, 26 Jan 2022 15:32:54 +0900</pubDate>
-      
-      <guid>https://yangoos57.github.io/data_analytics/preprocessing/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC/</guid>
-      <description>Hello world!!</description>
-    </item>
-    
-    <item>
-      <title>분석 실무_title</title>
-      <link>https://yangoos57.github.io/data_analytics/practice/%EB%B6%84%EC%84%9D%EC%8B%A4%EB%AC%B4/</link>
-      <pubDate>Wed, 26 Jan 2022 15:32:54 +0900</pubDate>
-      
-      <guid>https://yangoos57.github.io/data_analytics/practice/%EB%B6%84%EC%84%9D%EC%8B%A4%EB%AC%B4/</guid>
-      <description>Hello world!!</description>
-    </item>
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://yangoos57.github.io/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

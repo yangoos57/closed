@@ -2,70 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yangoos57.github.io/data_analytics/</loc>
-    <lastmod>2022-02-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/data_analytics/</loc>
-    <lastmod>2022-02-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/tags/data_science_for_business/</loc>
-    <lastmod>2022-02-19T00:00:00+00:00</lastmod>
+    <loc>https://yangoos57.github.io/hugo/</loc>
   </url><url>
     <loc>https://yangoos57.github.io/</loc>
-    <lastmod>2022-02-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yangoos57.github.io/tags/</loc>
-    <lastmod>2022-02-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/data_analytics/terms/</loc>
-    <lastmod>2022-02-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/data_analytics/terms/terms/</loc>
-    <lastmod>2022-02-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/python/</loc>
-    <lastmod>2022-02-09T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/python/seaborn/</loc>
-    <lastmod>2022-02-09T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/python/seaborn/datavisualization/</loc>
-    <lastmod>2022-02-09T11:07:10+06:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/tags/back-drop/</loc>
-    <lastmod>2022-02-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/tags/coffee/</loc>
-    <lastmod>2022-02-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/data_analytics/theory/git_concept_and_branching/</loc>
-    <lastmod>2022-02-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/tags/pizza/</loc>
-    <lastmod>2022-02-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/data_analytics/theory/</loc>
-    <lastmod>2022-02-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/python/pandas/</loc>
-    <lastmod>2022-01-26T15:32:54+09:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/python/pandas/pandas_title/</loc>
-    <lastmod>2022-01-26T15:32:54+09:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/data_analytics/practice/</loc>
-    <lastmod>2022-01-26T15:32:54+09:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/python/</loc>
-    <lastmod>2022-01-26T15:32:54+09:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/data_analytics/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC/</loc>
-    <lastmod>2022-01-26T15:32:54+09:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/data_analytics/preprocessing/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%84%EC%B2%98%EB%A6%AC/</loc>
-    <lastmod>2022-01-26T15:32:54+09:00</lastmod>
-  </url><url>
-    <loc>https://yangoos57.github.io/data_analytics/practice/%EB%B6%84%EC%84%9D%EC%8B%A4%EB%AC%B4/</loc>
-    <lastmod>2022-01-26T15:32:54+09:00</lastmod>
   </url>
 </urlset>
