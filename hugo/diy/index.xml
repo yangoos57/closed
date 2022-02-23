@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Leeway</title>
-    <link>https://yangoos57.github.io/</link>
-    <description>Recent content on Leeway</description>
+    <title>DIY on Leeway</title>
+    <link>https://yangoos57.github.io/hugo/diy/</link>
+    <description>Recent content in DIY on Leeway</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yangoos57.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yangoos57.github.io/hugo/diy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>게시글에 사진 확대기능 추가하기</title>
       <link>https://yangoos57.github.io/hugo/diy/zoom-image/</link>
