@@ -5,7 +5,16 @@
     <link>https://yangoos57.github.io/hugo/diy/</link>
     <description>Recent content in DIY on Leeway</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yangoos57.github.io/hugo/diy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 24 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yangoos57.github.io/hugo/diy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Hugo] 공식 Docs 활용을 위한 기본 문법 및 용어정리 1부</title>
+      <link>https://yangoos57.github.io/hugo/diy/document_1/</link>
+      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yangoos57.github.io/hugo/diy/document_1/</guid>
+      <description>들어가기에 앞서 Hugo 공식 문서는 친절한 듯 친절하지 않다. 초보자가 바로 이해하기 어렵고 Hugo 언어인 Go template이 직관적이지 않아 바로 쓰기 힘들다.</description>
+    </item>
+    
     <item>
       <title>게시글에 사진 확대기능 추가하기</title>
       <link>https://yangoos57.github.io/hugo/diy/zoom-image/</link>
