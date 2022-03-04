@@ -165,6 +165,7 @@
 <img src="../../../images/post/hugo/documentation/Documentation_2/Untitled%201.png">
 </div>
 </p>
+  <br>
 <style>
  
 .note {
@@ -202,9 +203,9 @@
   <div style="margin: 0 40px 0 20px">
     <svg xmlns="http://www.w3.org/2000/svg" style="display:inline" width="30" height="30" fill="currentColor" class="bi bi-exclamation-diamond-fill" viewBox="0 0 16 16">
       <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
-      <h3 style="display: inline; margin-left: 5px;">주의하기</h3>
+      <h3 style="display: inline; margin-left: 5px;">Warning</h3>
       
-      <p style="margin: 10px 0 0 40px ">게시글에 있는 코드를 list.html이나 single.html에서 실행한다면 오류가 발생할 수도 있다.</p>
+      <p style="margin: 10px 0 0 40px ">게시글에 있는 코드를 list.html이나 single.html에서 실행한다면 오류가 발생할 수도 있다. 익숙하지 않은 사용자라면 index.html에서 예시 코드를 실행시킬 것을 권장한다.</p>
 
   </div>
 </div>
@@ -965,8 +966,6 @@
 <span style="color:#75715e">&lt;!--JS 불러오기 | /js/medium-zoom.js를 js가 저장된 주소로 바꾸자.--&gt;</span>
   &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">defer</span> <span style="color:#a6e22e">language</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;javascript&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>  <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ &#34;</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">js</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">medium-zoom</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">js</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">urlize</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">relURL</span> <span style="color:#960050;background-color:#1e0010">}}&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
 </code></pre></div><br>
-</li>
-</ul>
 <style>
  
 .note {
@@ -1011,6 +1010,8 @@
   </div>
 </div>
 
+</li>
+</ul>
 <br>
 <h3 id="front-matter">Front matter</h3>
 <p>Front matter은 게시글의 metadata를 관리하는 영역이다. matadata는 날짜, 제목, 태그 등 게시글의 기본정보를 말한다.</p>
@@ -1065,10 +1066,11 @@ Description: 'description은 검색엔진이 페이지를 참조할 때 사용�
 </ul>
 <br>
 <h3 id="section과-taxonomy">Section과 Taxonomy</h3>
-<p>게시글을 분류하는 방법에는 Section과 Taxoomy가 있다. 대부분 블로그는 두 방법 모두 사용해 게시글을 분류한다. Section은 파일 경로대로 항목을 분류하는 방법이다. 하위 폴더에 있는 파일들은 모두 같은 주제로 분류 된다. Taxonomy는 게시글에 포함된 태그를 기반으로 분류하는 방법이다. 인스타그램 # 태그처럼 게시글에 원하는 키워드 포함시키면 같은 태그를 가진 게시글을 한번에 모아 볼수 있다.</p>
+<p>게시글을 분류하는 방법에는 Section과 Taxoomy가 있다. 대부분 블로그는 두 방법 모두 사용해 게시글을 분류한다. Section은 파일 경로대로 항목을 분류하는 방법이다. 하위 폴더에 있는 파일들은 모두 같은 주제로 분류 된다. Taxonomy는 게시글에 포함된 태그를 기반으로 분류하는 방법이다. 인스타그램 # 태그처럼 게시글에 원하는 키워드 포함시키면 같은 태그를 가진 게시글을 한번에 모아 볼 수 있다.</p>
+<br>
 <ul>
 <li>
-<p><strong><a href="https://gohugo.io/templates/lists/#what-is-a-list-page-template">Section 구성원리</a></strong></p>
+<p><strong><a href="https://gohugo.io/templates/lists/#what-is-a-list-page-template">Section 구조</a></strong></p>
 <p>Section은 파일이 저장된 경로와 관련있다. 같은 폴더에 분류된 자료들은 같은 주제에 속한다. Section의 폴더구조는 아래 그림과 같이 Homepage, Section, Conetnt Page로 구성된다.</p>
 <p>
 
@@ -1156,10 +1158,12 @@ Description: 'description은 검색엔진이 페이지를 참조할 때 사용�
 </p>
 </li>
 </ul>
-  <br>
 </li>
+</ul>
+<br>
+<ul>
 <li>
-<p><strong>Taxonmy 구조</strong></p>
+<p><strong><a href="https://gohugo.io/templates/taxonomy-templates/#example-list-all-taxonomies-terms-and-assigned-content">Taxonmy 구조</a></strong></p>
 <p>Taxonomy는 태그를 활용해 게시글을 분류하는 방법이다. Taxonomy 계층은 Taxonomy - Term - Value이다. Section과 다른 점은 하나의 게시글이 여러 Term에 포함 될 수 있다는 것이다.</p>
 <p>
 
@@ -1172,14 +1176,10 @@ Description: 'description은 검색엔진이 페이지를 참조할 때 사용�
 <img src="../../../images/post/hugo/documentation/Documentation_2/Untitled%2015.png">
 </div>
 </p>
-  <br>
-</li>
-<li>
-<p><strong>게시글에 태그 활용하기</strong></p>
-<p>기본 Taxonomy로 제공되는 변수로는 tags와 categories가 있다. Front matter에 tags 또는 cetogories를 입력한 뒤 원하는 태그를 작성하면 taxonomy 페이지가 자동 생성 된다.</p>
 <ul>
 <li>
-<p><strong>Front matter에 categories 추가하기</strong></p>
+<p>Front matter에 categories 추가하기</p>
+<p>기본 Taxonomy로 제공되는 변수로는 tags와 categories가 있다. Front matter에 tags 또는 cetogories를 입력한 뒤 원하는 태그를 작성하면 taxonomy 페이지가 자동 생성 된다.</p>
 <p>
 
 
@@ -1188,10 +1188,9 @@ Description: 'description은 검색엔진이 페이지를 참조할 때 사용�
 
 
 <div style="background-color: white;border: 1px solid black; text-align: center; padding: 2px">
-<img src="../../../images/post/hugo/documentation/Documentation_2/Untitled%2032.png">
+<img src="../../../images/post/hugo/documentation/Documentation_2/Untitled%2032_1.png">
 </div>
 </p>
-  <br>
 <p>
 
 
@@ -1203,10 +1202,10 @@ Description: 'description은 검색엔진이 페이지를 참조할 때 사용�
 <img src="../../../images/post/hugo/documentation/Documentation_2/Untitled%2033.png">
 </div>
 </p>
-<ul>
+</li>
 <li>
-<p><strong><a href="https://gohugo.io/templates/taxonomy-templates/#example-list-all-taxonomies-terms-and-assigned-content">Taxonomy 불러오기</a></strong>
-front matter에 설정한 태그 별로 페이지를 불러오자.</p>
+<p>Taxonomy 불러오기</p>
+<p>front matter에 설정한 태그 별로 페이지를 불러오자.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:3;-o-tab-size:3;tab-size:3"><code class="language-html" data-lang="html">{{ define &#34;main&#34; }}
 &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text-align: center; height: 1000px;&#34;</span>&gt;
     &lt;<span style="color:#f92672">div</span>  <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;margin: 200px auto; font-size: 1.1em;&#34;</span>&gt;
@@ -1250,8 +1249,8 @@ front matter에 설정한 태그 별로 페이지를 불러오자.</p>
 </p>
 </li>
 <li>
-<p><strong>게시글에 태그 표현하기</strong></p>
-<p>현재 게시글에 붙은 태그를 표시하고 링크로 연결하는 방법이다.</p>
+<p>게시글에 태그 표현하기</p>
+<p>현재 게시글에 포함된 taxonomy를 표시하고 링크로 연결하는 방법이다.</p>
 <p>
 
 
@@ -1289,8 +1288,6 @@ front matter에 설정한 태그 별로 페이지를 불러오자.</p>
 &lt;/<span style="color:#f92672">div</span>&gt;
 {{end }}
 </code></pre></div></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -1365,10 +1362,10 @@ front matter에 설정한 태그 별로 페이지를 불러오자.</p>
 </p>
 </li>
 </ul>
+<p><br><br><br><br><br><br></p>
 
         <br><br><br><br><br>
-        🐡🐧🦆🦢🐢
-<div class ='rel-post'>
+        <div class ='rel-post'>
   <h3 style="display: inline;">🕊️</h3>
 
 
