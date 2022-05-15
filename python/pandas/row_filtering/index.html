@@ -3,7 +3,7 @@
   <head>
     <title>상황에 맞는 filtering 함수 사용하기 </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-    <meta name="description" content="데이터 분석을 하다보면 일상적으로 사용하게되는 fitering 함수 세가지를 소개한다. pandas는 다양한 filtering 방법을 지원하고 있는데, 이중 연산속도가 빠르고 가독성이 좋은 query, boolean masking, isin 세 가지를 상황에 맞게 게되는 방법을 설명하고자 한다.">
+    <meta name="description" content="데이터 분석에서 일상적으로 사용하는 fitering 함수 세가지를 소개한다. pandas는 다양한 filtering 방법을 지원하고 있는데, 이중 연산속도가 빠르고 가독성이 좋은 query, boolean masking, isin를 상황에 맞게 사용하는 방법을 설명한다.">
     
     <meta name="google-site-verification" content="cGIJ_4UB82a6wkT0s71AkXfCqej5-Svsic6s2N0YrLk" />  
 
@@ -137,23 +137,23 @@
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">  <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
   <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-  <span class="o">&gt;</span> <span class="n">row</span> <span class="mi">100</span><span class="n">만개</span><span class="p">,</span> <span class="n">column</span> <span class="mi">3</span><span class="n">개</span> <span class="n">df</span> <span class="n">생성</span>
+  <span class="c1"># row 100만개, column 3개 df 생성</span>
   <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="mi">10</span><span class="o">+</span><span class="mf">60.5</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">1000000</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span> 
   <span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;num&#39;</span><span class="p">,</span><span class="s1">&#39;num2&#39;</span><span class="p">,</span><span class="s1">&#39;num3&#39;</span><span class="p">]</span>
   <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;float_format&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">{:f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">)</span>
   <span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
   
-  <span class="o">&gt;</span> <span class="o">+-------+-------------+-------------+-------------+</span>
-  <span class="o">&gt;</span> <span class="o">|</span>       <span class="o">|</span>         <span class="n">num</span> <span class="o">|</span>        <span class="n">num2</span> <span class="o">|</span>        <span class="n">num3</span> <span class="o">|</span>
-  <span class="o">&gt;</span> <span class="o">+-------+-------------+-------------+-------------+</span>
-  <span class="o">&gt;</span> <span class="o">|</span> <span class="n">count</span> <span class="o">|</span>   <span class="mi">1000000</span>   <span class="o">|</span>   <span class="mi">1000000</span>   <span class="o">|</span>   <span class="mi">1000000</span>   <span class="o">|</span>
-  <span class="o">&gt;</span> <span class="o">+-------+-------------+-------------+-------------+</span>
-  <span class="o">&gt;</span> <span class="o">|</span>  <span class="nb">min</span>  <span class="o">|</span> <span class="o">-</span><span class="mf">282.352587</span> <span class="o">|</span> <span class="o">-</span><span class="mf">287.677283</span> <span class="o">|</span> <span class="o">-</span><span class="mf">300.389316</span> <span class="o">|</span>
-  <span class="o">&gt;</span> <span class="o">+-------+-------------+-------------+-------------+</span>
-  <span class="o">&gt;</span> <span class="o">|</span>  <span class="mi">50</span><span class="o">%</span>  <span class="o">|</span>   <span class="mf">9.997371</span>  <span class="o">|</span>  <span class="mf">10.014887</span>  <span class="o">|</span>   <span class="mf">9.953583</span>  <span class="o">|</span>
-  <span class="o">&gt;</span> <span class="o">+-------+-------------+-------------+-------------+</span>
-  <span class="o">&gt;</span> <span class="o">|</span>  <span class="nb">max</span>  <span class="o">|</span>  <span class="mf">308.740897</span> <span class="o">|</span>  <span class="mf">292.197571</span> <span class="o">|</span>  <span class="mf">294.566926</span> <span class="o">|</span>
-  <span class="o">&gt;</span> <span class="o">+-------+-------------+-------------+-------------+</span>
+  <span class="c1"># +-------+-------------+-------------+-------------+</span>
+  <span class="c1"># |       |         num |        num2 |        num3 |</span>
+  <span class="c1"># +-------+-------------+-------------+-------------+</span>
+  <span class="c1"># | count |   1000000   |   1000000   |   1000000   |</span>
+  <span class="c1"># +-------+-------------+-------------+-------------+</span>
+  <span class="c1"># |  min  | -282.352587 | -287.677283 | -300.389316 |</span>
+  <span class="c1"># +-------+-------------+-------------+-------------+</span>
+  <span class="c1"># |  50%  |   9.997371  |  10.014887  |   9.953583  |</span>
+  <span class="c1"># +-------+-------------+-------------+-------------+</span>
+  <span class="c1"># |  max  |  308.740897 |  292.197571 |  294.566926 |</span>
+  <span class="c1"># +-------+-------------+-------------+-------------+</span>
   
 
   <span class="s1">&#39;&#39;&#39;
@@ -163,13 +163,13 @@
 </span><span class="s1">  255 &lt; num3 &lt; 50
 </span><span class="s1">  &#39;&#39;&#39;</span>
 
-  <span class="o">&gt;</span> <span class="n">query</span>
+  <span class="c1"># query</span>
   <span class="n">result</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;10 &lt; num &lt; 100 &amp; 0.5 &lt; num2 &lt; 10 &amp; 25&lt; num3 &lt; 50&#39;</span><span class="p">)</span>
 
   <span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>   <span class="o">&gt;&gt;&gt;</span>  <span class="mi">3982</span>
 
 
-  <span class="o">&gt;</span> <span class="n">boolean</span> <span class="n">mask</span>
+  <span class="c1"># boolean mask</span>
   <span class="n">BM</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;num&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;num&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">)</span>
   <span class="n">BM2</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;num2&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;num2&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span>
   <span class="n">BM3</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;num3&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;num3&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="p">)</span>
@@ -181,7 +181,7 @@
 <ul>
 <li><strong>검색용으로 훌륭하다.</strong></li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;</span> <span class="n">서울</span> <span class="n">공공데이터</span> <span class="n">지하철정보</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="c1"># 서울 공공데이터 지하철정보</span>
 <span class="n">sub_station</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;\sub_station.csv&#39;</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;CP949&#39;</span><span class="p">)</span> 
 
 <span class="n">sub_station</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;역사명 == &#34;김포공항&#34;&#39;</span><span class="p">)</span>
@@ -256,7 +256,7 @@
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">   <span class="n">stations</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;김포공항&#39;</span><span class="p">,</span> <span class="s1">&#39;신논현&#39;</span><span class="p">]</span>
    <span class="n">sub_station</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;역사명 == @stations&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;역사명&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-   <span class="o">&gt;</span> <span class="nd">@를</span> <span class="n">붙이면</span> <span class="n">변수</span> <span class="n">취급</span>
+   <span class="c1"># @를 붙이면 변수 취급</span>
 </code></pre></div><div style='margin-left : 25px'>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -445,7 +445,7 @@
 <li><strong>한 번에 하나의 필터링만 가능하다</strong><br>
 query나 isin은 같은 column 내에 있는 여러 value를 한번에 처리할 수 있다. 하지만 boolean masking은 values별로 일일히 변수를 만들어야한다. 보기엔 간단해 보여도 막상 쓰다보면 실수도 많이 발생하고, 조건을 자주 바꿔서 검색할때 불편함이 이만저만이 아니다.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">  <span class="o">&gt;</span> <span class="n">boolean</span> <span class="n">mask</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">  <span class="c1"># boolean mask</span>
   <span class="n">BM1</span> <span class="o">=</span> <span class="n">sub_station</span><span class="p">[</span><span class="s1">&#39;역사명&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;김포공항&#39;</span>
   <span class="n">BM2</span> <span class="o">=</span> <span class="n">sub_station</span><span class="p">[</span><span class="s1">&#39;역사명&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;신논현&#39;</span>
   <span class="n">BM3</span> <span class="o">=</span> <span class="n">sub_station</span><span class="p">[</span><span class="s1">&#39;역사명&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;여의도&#39;</span>
@@ -466,16 +466,16 @@ query나 isin은 같은 column 내에 있는 여러 value를 한번에 처리할
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">  <span class="n">stations</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;김포공항&#39;</span><span class="p">,</span> <span class="s1">&#39;신논현&#39;</span><span class="p">,</span><span class="s1">&#39;여의도&#39;</span><span class="p">,</span><span class="s1">&#39;여의나루&#39;</span><span class="p">]</span>
 
-  <span class="o">&gt;</span> <span class="n">query</span> 
+  <span class="c1"># query </span>
   <span class="n">sub_station</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;역사명 == @stations&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;역사명&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 
-  <span class="o">&gt;</span> <span class="n">isin</span>
+  <span class="c1"># isin</span>
   <span class="n">BM</span> <span class="o">=</span> <span class="n">sub_station</span><span class="p">[</span><span class="s1">&#39;역사명&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">stations</span><span class="p">)</span>
   <span class="n">sub_station</span><span class="p">[</span><span class="n">BM</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;역사명&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 
-  <span class="o">&gt;</span> <span class="n">boolean</span> <span class="n">mask</span>
+  <span class="c1"># boolean mask</span>
   <span class="n">BM1</span> <span class="o">=</span> <span class="n">sub_station</span><span class="p">[</span><span class="s1">&#39;역사명&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;김포공항&#39;</span>
   <span class="n">BM2</span> <span class="o">=</span> <span class="n">sub_station</span><span class="p">[</span><span class="s1">&#39;역사명&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;신논현&#39;</span>
   <span class="n">BM3</span> <span class="o">=</span> <span class="n">sub_station</span><span class="p">[</span><span class="s1">&#39;역사명&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;여의도&#39;</span>
