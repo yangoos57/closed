@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hugo 게시글 내 코드 박스(syntax highlighter) 사용하기 </title>
+    <title>Hugo 게시글 내 코드 블럭(syntax highlighter) 사용하기 </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-    <meta name="description" content="Hugo 게시글 내 syntax highlighter를 변경하는 글이다. HTML, CSS, Hugo에 익숙하지 않은 사용자들도 이 글을 보고 설치할 수 있도록 작성했다. syntax highlighter로 prism을 활용한다.">
+    <meta name="description" content="Hugo 게시글 내 syntax highlighter를 변경하는 글이다. HTML, CSS, Hugo에 익숙하지 않은 사용자들도 이 글을 보고 설치할 수 있도록 작성했다. syntax highlighter로 prism을 활용한다. code block, 코드블록, 코드블럭">
     
     <meta name="google-site-verification" content="cGIJ_4UB82a6wkT0s71AkXfCqej5-Svsic6s2N0YrLk" />  
 
@@ -69,7 +69,7 @@
     
     <div class="Subhead">
       <div class="Subhead-heading">
-        <div class="h1 mt-3 mb-3">Hugo 게시글 내 코드 박스(syntax highlighter) 사용하기 </div>
+        <div class="h1 mt-3 mb-3">Hugo 게시글 내 코드 블럭(syntax highlighter) 사용하기 </div>
       </div>
       <div class="Subhead-description">
         
@@ -90,8 +90,8 @@
 
 
 
-<a href='../../../tags/%EC%BD%94%EB%93%9C-%EB%B0%95%EC%8A%A4' class="muted-link">
-  <span class="badge text-white" style="background-color: #84aec4;" >코드 박스</span>
+<a href='../../../tags/%EC%BD%94%EB%93%9C-%EB%B8%94%EB%9F%AD' class="muted-link">
+  <span class="badge text-white" style="background-color: #84aec4;" >코드 블럭</span>
 </a>
 
 <a href='../../../tags/syntax-highlighter' class="muted-link">
@@ -100,6 +100,10 @@
 
 <a href='../../../tags/prism' class="muted-link">
   <span class="badge text-white" style="background-color: #84aec4;" >PRISM</span>
+</a>
+
+<a href='../../../tags/code-block' class="muted-link">
+  <span class="badge text-white" style="background-color: #84aec4;" >CODE BLOCK</span>
 </a>
 
         
@@ -118,11 +122,9 @@
       <section class="markdown-body">
         <br>
 <h2 id="구현하고자-하는-기능">구현하고자 하는 기능</h2>
-<p><strong>Syntax highlighter 예시</strong></p>
+<h3 id="syntax-highlighter-예시">Syntax highlighter 예시</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 <span class="kn">import</span> <span class="nn">os</span>
 
 <span class="c1">### 현재 경로</span>
@@ -136,17 +138,6 @@
 <span class="c1">### 옵션</span>
 <span class="n">markers_options</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="s1">&#39;^&#39;</span><span class="p">,</span><span class="s1">&#39;p&#39;</span><span class="p">,</span><span class="s1">&#39;8&#39;</span><span class="p">,</span><span class="s1">&#39;s&#39;</span><span class="p">,</span><span class="s1">&#39;p&#39;</span><span class="p">,</span><span class="s1">&#39;*&#39;</span><span class="p">]</span>
 
-<span class="c1">### lineplot 구현</span>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">continent_poss</span><span class="p">):</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">2010</span><span class="p">,</span><span class="mi">2019</span><span class="p">],</span> <span class="n">bycontinentyear_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">c</span><span class="p">,[</span><span class="mi">2010</span><span class="p">,</span><span class="mi">2019</span><span class="p">]],</span> <span class="n">label</span><span class="o">=</span><span class="n">c</span><span class="p">,</span> <span class="n">marker</span> <span class="o">=</span> <span class="n">markers_options</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-
-<span class="c1">### plot 수정</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">([</span><span class="mi">2010</span><span class="p">,</span><span class="mi">2019</span><span class="p">])</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.05</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Perceptions_of_corruption&#39;</span><span class="p">)</span>
-
-
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div><p><br><br></p>
 <h2 id="설치-절차">설치 절차</h2>
 <h3 id="1-prismjs와-prismcss-다운로드">1. prism.js와 prism.css 다운로드</h3>
@@ -258,8 +249,8 @@
 
 
 
-<a href='../../../tags/%EC%BD%94%EB%93%9C-%EB%B0%95%EC%8A%A4' class="muted-link">
-  <span class="badge text-white" style="background-color: #84aec4;" >코드 박스</span>
+<a href='../../../tags/%EC%BD%94%EB%93%9C-%EB%B8%94%EB%9F%AD' class="muted-link">
+  <span class="badge text-white" style="background-color: #84aec4;" >코드 블럭</span>
 </a>
 
 <a href='../../../tags/syntax-highlighter' class="muted-link">
@@ -268,6 +259,10 @@
 
 <a href='../../../tags/prism' class="muted-link">
   <span class="badge text-white" style="background-color: #84aec4;" >PRISM</span>
+</a>
+
+<a href='../../../tags/code-block' class="muted-link">
+  <span class="badge text-white" style="background-color: #84aec4;" >CODE BLOCK</span>
 </a>
  
   <h2>😶‍🌫️ Related Posts</h2>
@@ -419,9 +414,13 @@
     
     <div id="toc" class="sticky-lg-top">
       
-      <b>Hugo 게시글 내 코드 박스(syntax highlighter) 사용하기 </b><nav id="TableOfContents">
+      <b>Hugo 게시글 내 코드 블럭(syntax highlighter) 사용하기 </b><nav id="TableOfContents">
   <ul>
-    <li><a href="#구현하고자-하는-기능">구현하고자 하는 기능</a></li>
+    <li><a href="#구현하고자-하는-기능">구현하고자 하는 기능</a>
+      <ul>
+        <li><a href="#syntax-highlighter-예시">Syntax highlighter 예시</a></li>
+      </ul>
+    </li>
     <li><a href="#설치-절차">설치 절차</a>
       <ul>
         <li><a href="#1-prismjs와-prismcss-다운로드">1. prism.js와 prism.css 다운로드</a></li>
