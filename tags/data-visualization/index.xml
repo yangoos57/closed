@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 11 May 2022 13:47:07 +0900</lastBuildDate><atom:link href="https://yangoos57.github.io/tags/data-visualization/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>예시에 나오는 ROC Curve와 Precision-Recall Curve 그려보기</title>
+      <title>예시에 나오는 ROC Curve와 Precision-Recall Curve 그리기</title>
       <link>https://yangoos57.github.io/ml/data_viz/roc_curve_and_pe_re_curve/</link>
       <pubDate>Wed, 11 May 2022 13:47:07 +0900</pubDate>
       
