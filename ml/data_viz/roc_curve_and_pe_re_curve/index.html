@@ -140,15 +140,191 @@
 <blockquote>
 <h3 id="roc-curve와-precision-recall-curve">ROC Curve와 Precision Recall Curve</h3>
 </blockquote>
-<p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  
 
-<div style="background-color: white;border: 0px solid black; text-align: center; padding: 30px">
+<style>
 
-    <img src="https://yangoos57.github.io/images/ML/data_viz/main_1.png">
+input.range {
+    -webkit-appearance: none;
+    bottom: -10px;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+  input.range:focus {
+    outline: 0;
+  }
+  input.range::-moz-focus-outer {
+    border: 0;
+  }
+  
+  input.range::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px black, 0px 0px 1px black;
+    border: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7.5px;
+  }
+  
+  input.range::-moz-range-thumb {
+    box-shadow: 1px 1px 1px black, 0px 0px 1px black;
+    border: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+  }
+  
+  input.range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
+    background: #84aec4;
+    border-radius: 20px;
+    border: 0;
+  }
+  
+  input.range::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
+    background: #84aec4;
+    border-radius: 20px;
+    border: 0;
+  }
+  
+  input.range::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  
+  input.range::-ms-thumb {
+    box-shadow: 1px 1px 1px black, 0px 0px 1px black;
+    border: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    height: 5px;
+  }
+  
+  input.range::-ms-fill-lower,
+  input.range::-ms-fill-upper {
+    background: #84aec4;
+    border: 0;
+    border-radius: 40px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0px 0px 1px rgba(13, 13, 13, 0);
+  }
+  
+  .range__tick {
+    fill: #a0a0a0;
+  }
+  .range__tick:first-child {
+    -webkit-transform: translateX(2px);
+    -moz-transform: translateX(2px);
+    -ms-transform: translateX(2px);
+    -o-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  .range__tick:last-child {
+    -webkit-transform: translateX(-3px);
+    -moz-transform: translateX(-3px);
+    -ms-transform: translateX(-3px);
+    -o-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  
+  .range__field {
+    border: 0;
+    width: 80%;
+    margin: 0 auto ;
+    text-align: center ;
+  }
+  .range__point{
+    font-size: 14px ;
+  }
+  
+  @media screen  and (max-width: 1200px) {
+
+  }
+ .img{
+    width : 70% ;
+    height : 70% ;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  @media screen  and (max-width: 500px) {
+    .img{
+    width : 100% ;
+    height : 100% ;
+    }
+    .range__point{
+    font-size: 12px ;
+    }
+  } 
+</style>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="margin: 0 auto; text-align: center;">
+  <fieldset class="range__field">
+      <input class="range" type="range" min="1" max="20" value="1" id ="intro_curves_range">
+
+        
+        
+      </svg>
+
+  </fieldset>
+
+  <img src="https://yangoos57.github.io//images/ML/plot/intro_curves/1.png" id='intro_curves_img' class="img">
+  
 </div>
-</p>
+
+
+
+<script>
+       
+$(document).on("input change", "#intro_curves_range", function() {
+   var v=$(this).val(); 
+  
+   $("#intro_curves_img").prop("src","\/images\/ML\/plot\/intro_curves/"+String(v)+".png");
+   });
+
+</script>
+
+
+
 <br>
 <h2 id="이-글의-목적">이 글의 목적</h2>
 <p>Confusion matrix는 classification 유형에서 유용하게 사용되며 모델의 실질적인 성능을 판단하는데 매우 효과적이다. 이에 기반한 Roc Curve와 Precision Recall Curve는 Confusion matri를 보다 직관적으로 이해할 수 있도록 돕는다.</p>
@@ -485,9 +661,15 @@ input.range {
 
 
 
+
+
+
+
 <div style="margin: 0 auto; text-align: center;">
   <fieldset class="range__field">
       <input class="range" type="range" min="1" max="8" value="1" id ="making_curve_range">
+
+      
       <svg role="presentation" width="100%" height="10" xmlns="http://www.w3.org/2000/svg" style="overflow: visible;">
         
         
@@ -556,8 +738,8 @@ input.range {
         <rect class="range__tick" x="100%" y="3" width="1" height="10"></rect>
          
         
-      </svg>
-
+        </svg>
+      
       <svg role="presentation" width="100%" height="14" xmlns="http://www.w3.org/2000/svg" style="overflow: visible;">
         
         
@@ -802,9 +984,15 @@ input.range {
 
 
 
+
+
+
+
 <div style="margin: 0 auto; text-align: center;">
   <fieldset class="range__field">
       <input class="range" type="range" min="1" max="8" value="1" id ="roc_curve_range">
+
+      
       <svg role="presentation" width="100%" height="10" xmlns="http://www.w3.org/2000/svg" style="overflow: visible;">
         
         
@@ -873,8 +1061,8 @@ input.range {
         <rect class="range__tick" x="100%" y="3" width="1" height="10"></rect>
          
         
-      </svg>
-
+        </svg>
+      
       <svg role="presentation" width="100%" height="14" xmlns="http://www.w3.org/2000/svg" style="overflow: visible;">
         
         
@@ -1146,121 +1334,14 @@ input.range {
 
 
 
+
+
+
+
 <div style="margin: 0 auto; text-align: center;">
   <fieldset class="range__field">
       <input class="range" type="range" min="1" max="8" value="1" id ="pe_rc_curve_range">
-      <svg role="presentation" width="100%" height="10" xmlns="http://www.w3.org/2000/svg" style="overflow: visible;">
-        
-        
-        
-        
-        
-        
-        
-        
-        <rect class="range__tick" x="0%" y="3" width="1" height="10"></rect>
-        
-        
-        
-        
-        
-        
-        
-        <rect class="range__tick" x="14%" y="3" width="1" height="10"></rect>
-        
-        
-        
-        
-        
-        
-        
-        <rect class="range__tick" x="29%" y="3" width="1" height="10"></rect>
-        
-        
-        
-        
-        
-        
-        
-        <rect class="range__tick" x="43%" y="3" width="1" height="10"></rect>
-        
-        
-        
-        
-        
-        
-        
-        <rect class="range__tick" x="57%" y="3" width="1" height="10"></rect>
-        
-        
-        
-        
-        
-        
-        
-        <rect class="range__tick" x="71%" y="3" width="1" height="10"></rect>
-        
-        
-        
-        
-        
-        
-        
-        <rect class="range__tick" x="86%" y="3" width="1" height="10"></rect>
-        
-        
-        
-        
-        
-        
-        
-        <rect class="range__tick" x="100%" y="3" width="1" height="10"></rect>
-         
-        
-      </svg>
 
-      <svg role="presentation" width="100%" height="14" xmlns="http://www.w3.org/2000/svg" style="overflow: visible;">
-        
-        
-        
-        
-        <text class="range__point" x="0%" y="14" text-anchor="middle">0%</text>
-        
-        
-        
-        
-        <text class="range__point" x="14%" y="14" text-anchor="middle">14%</text>
-        
-        
-        
-        
-        <text class="range__point" x="29%" y="14" text-anchor="middle">29%</text>
-        
-        
-        
-        
-        <text class="range__point" x="43%" y="14" text-anchor="middle">43%</text>
-        
-        
-        
-        
-        <text class="range__point" x="57%" y="14" text-anchor="middle">57%</text>
-        
-        
-        
-        
-        <text class="range__point" x="71%" y="14" text-anchor="middle">71%</text>
-        
-        
-        
-        
-        <text class="range__point" x="86%" y="14" text-anchor="middle">86%</text>
-        
-        
-        
-        
-        <text class="range__point" x="100%" y="14" text-anchor="middle">100%</text>
-         
         
         
       </svg>
